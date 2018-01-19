@@ -12,4 +12,7 @@ class User:
         """saves user objects into user_list"""
         User.user_list.append(self)
 
-    
+    def delete_user(self):
+        """we want to make our delete user test to pass"""
+
+        User.user_list.remove(self)
