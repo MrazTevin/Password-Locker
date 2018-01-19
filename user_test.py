@@ -16,8 +16,8 @@ class TestUser(unittest.TestCase):
         self.assertEqual(self.new_user.password, "password")
     def test_save_user(self):
         """is the text_save_user saved into user_list?"""
-        self.new_user
-
+        self.new_user.save_user()
+        self.assertEqual(len(User.user_list), 1)
 
 
 if  __name__ ==  '__main__':
