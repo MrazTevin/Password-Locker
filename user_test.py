@@ -40,14 +40,14 @@ class TestUser(unittest.TestCase):
         self.new_user.delete_user()
         self.assertEqual(len(User.user_list), 1)
 
-    def test_find_user_by_username(self):
-        """to find the user by username and display their information"""
+    def test_find_by_website(self):
+        #"""to find the user by username and display their information"""
 
         self.new_user.save_user()
         test_user = User("elitesingles.com", "Khalid", "hot96%")
         test_user.save_user()
 
-        found_user = User.find_by_username("Khalid")
+        found_user = User.find_by_website("elitesingles.com")
 
         self.assertEqual(found_user.password, test_user.password)
 
