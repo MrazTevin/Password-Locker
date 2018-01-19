@@ -16,9 +16,9 @@ Check your login details if they do exist.
 Save any website you recently signed up with it's password.
 Try to delete any of your user details.
 
-### Break down into end to end tests
+###  end to end tests
 
-test_save_user, test_save_account :
+
   - Will save your newly generated user and account details into the user_list and account_list respectively.
 test_save_multiple_user, test_save_multiple_account :
   - Checks whether assorted individuals using the app can save their details.
