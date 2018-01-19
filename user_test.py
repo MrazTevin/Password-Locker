@@ -18,6 +18,12 @@ class TestUser(unittest.TestCase):
         """is the text_save_user saved into user_list?"""
         self.new_user.save_user()
         self.assertEqual(len(User.user_list), 1)
+    def test_save_multiple_user(self):
+        """we want to save multiple users to our user_list"""
+        self.new_user.save_user()
+        test_user = User("www.dropbox.com", "MrazHashid", "jheineahiko")
+        test_user.save_user()
+        self.assertEqual(len(User.user_list), 2)
 
 
 if  __name__ ==  '__main__':
