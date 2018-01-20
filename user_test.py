@@ -51,6 +51,10 @@ class TestUser(unittest.TestCase):
 
         self.assertEqual(found_user.password, test_user.password)
 
+    def test_display_users(self):
+        """returns all list of user details"""
+        self.assertEqual(User.display_users(), User.user_list)
+
 
 if __name__ == '__main__':
     unittest.main()

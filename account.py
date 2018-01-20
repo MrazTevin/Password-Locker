@@ -25,3 +25,15 @@ class Account:
         for account in cls.account_list:
             if account.user_name == user_name:
                 return account
+
+    @classmethod
+    def account_exist(cls, user_name):
+        """
+        we want to test if our account exists
+        """
+
+        for account in cls.account_list:
+            if account.user_name == user_name:
+                return True
+
+        return False
