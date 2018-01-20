@@ -23,3 +23,8 @@ class User:
         for user in cls.user_list:
             if user.website == website:
                 return user
+
+    @classmethod
+    def display_users(cls):
+        """this method will return the user_list"""
+        return cls.user_list
