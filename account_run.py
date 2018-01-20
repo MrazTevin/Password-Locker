@@ -9,3 +9,8 @@ def create_account(user_name, password):
 def delete_account(account):
     """function that will delete an account"""
     account.delete_account()
+
+
+def find_account(user_name):
+    """finds an account user_name and returns that user_name"""
+    return Account.find_by_account(user_name)
