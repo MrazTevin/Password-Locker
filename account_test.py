@@ -6,6 +6,10 @@ class TestAccount(unittest.TestCase):
     def setUp(self):
         self.new_account = Account("Arnold", "@908street")
 
+    def tearDown(self):
+        """will do the cleanup after running each test case"""
+        Account.account_list = []
+
     def test_init(self):
         """test if we instanstiated properly"""
         self.assertEqual(self.new_account.user_name, "Arnold")
@@ -28,7 +32,7 @@ class TestAccount(unittest.TestCase):
         test_account = Account("Hashi", "hashish89")
         test_account.save_account()
         self.assertEqual(len(Account.account_list), 2)
-        
+
 
 if __name__ == '__main__':
     unittest.main()
