@@ -11,4 +11,6 @@ class Account:
         """saving account object into object list"""
         Account.account_list.append(self)
 
-    
+    def delete_account(self):
+        """will delete any account saved in the account_list"""
+        Account.account_list.remove(self)
