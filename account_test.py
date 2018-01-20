@@ -33,6 +33,15 @@ class TestAccount(unittest.TestCase):
         test_account.save_account()
         self.assertEqual(len(Account.account_list), 2)
 
+    def test_delete_account(self):
+        """we want to be able to delete a login account"""
+        self.new_account.save_account()
+        test_account = Account("Hashi", "hashish89")
+        test_account.save_account()
+
+        self.new_account.delete_account()
+        self.assertEqual(len(Account.account_list), 1)
+
 
 if __name__ == '__main__':
     unittest.main()
