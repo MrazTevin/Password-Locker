@@ -11,6 +11,14 @@ class TestAccount(unittest.TestCase):
         self.assertEqual(self.new_account.user_name, "Arnold")
         self.assertEqual(self.new_account.password, "@908street")
 
-    
+    def test_save_account(self):
+        """
+        we want to test if our account object is saved
+           into the account list
+        """
+        self.new_account.saveaccount()
+        self.assertEqual(len(Account.account_list), 1)
+
+
 if __name__ == '__main__':
     unittest.main()
