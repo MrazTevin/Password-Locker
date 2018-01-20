@@ -19,6 +19,16 @@ class TestAccount(unittest.TestCase):
         self.new_account.save_account()
         self.assertEqual(len(Account.account_list), 1)
 
+    def test_save_multiple_account(self):
+        """
+        to help us save multiple accounts to
+        our account_list
+        """
+        self.new_account.save_account()
+        test_account = Account("Hashi", "hashish89")
+        test_account.save_account()
+        self.assertEqual(len(Account.account_list), 2)
+        
 
 if __name__ == '__main__':
     unittest.main()
