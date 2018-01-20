@@ -14,3 +14,14 @@ class Account:
     def delete_account(self):
         """will delete any account saved in the account_list"""
         Account.account_list.remove(self)
+
+    @classmethod
+    def find_by_user_name(cls, user_name):
+        """
+        this method will take a user_name and
+        return an account that matches that user_name
+        """
+
+        for account in cls.account_list:
+            if account.user_name == user_name:
+                return account
