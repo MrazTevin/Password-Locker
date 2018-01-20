@@ -16,7 +16,7 @@ class TestAccount(unittest.TestCase):
         we want to test if our account object is saved
            into the account list
         """
-        self.new_account.saveaccount()
+        self.new_account.save_account()
         self.assertEqual(len(Account.account_list), 1)
 
 
