@@ -1,5 +1,8 @@
-
-# Password Locker
+.hi {
+  background: linear-gradient(225deg, lightblue, lightblue);
+  border: thick dotted purple;
+}
+# Password Locker class="h1"
 
 This app generates and stores passwords for various accounts.
 

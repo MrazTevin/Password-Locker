@@ -19,4 +19,20 @@ def find_account(user_name):
 def display_accounts():
     """function that will return all saved accounts"""
     return Account.display_accounts()
-    
+
+
+def main():
+    print("Do you have an account already?")
+    name = input()
+
+    print("create a new_account")
+    print('\n')
+    print("create a user_name and password")
+    print ("User name ...")
+    name = input()
+    print ("password...")
+    name = input()
+s
+
+if __name__ == '__main__':
+    main()
