@@ -1,11 +1,14 @@
+import pyperclip
+
+
 class Account:
     """Will generate instances of account"""
     account_list = []
     """this is a class variable called account_list"""
-    def __init__(self, user_name, password):
+    def __init__(self, login_user_name, login_password, login_website):
         """Passed in 4 arguements and create 3 instance variables below"""
-        self.user_name = user_name
-        self.password = password
+        self.login_user_name = login_user_name
+        self.login_password = login_password
 
     def save_account(self):
         """saving account object into object list"""
@@ -23,17 +26,22 @@ class Account:
         """
 
         for account in cls.account_list:
-            if account.user_name == user_name:
+            if account.login_user_name == user_name:
                 return account
 
     @classmethod
-    def account_exist(cls, user_name):
+    def account_exist(cls, login_user_name):
         """
         we want to test if our account exists
         """
 
         for account in cls.account_list:
-            if account.user_name == user_name:
+            if account.login_user_name == login_user_name and account.login_password:
                 return True
 
         return False
+
+    @classmethod
+    def copy_account(cls, login_user_name):
+        account_found = Account.find_account(login_user_name)
+        pyperclip.copy(credentials_found_login_user_name)
