@@ -17,3 +17,15 @@ def save_user(user):
     will save new_users
     '''
     user.save_user()
+
+
+def find_user_by_user_name(user_name):
+    return User.find_user_by_user_name(user_name)
+
+
+def display_aacount():
+    return User.display_users()
+
+
+def save_accounts(accounts):
+    return accounts.save_accounts()
