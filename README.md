@@ -1,5 +1,5 @@
 
-# Password Locker class="h1"
+# Password Locker 
 
 This app generates and stores passwords for various accounts.
 
