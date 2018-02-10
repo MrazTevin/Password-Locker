@@ -36,7 +36,7 @@ class Account:
         """
 
         for account in cls.account_list:
-            if account.login_user_name == login_user_name and account.login_password:
+            if account.login_user_name == login_user_name and account.login_password == password:
                 return True
 
         return False
@@ -44,4 +44,4 @@ class Account:
     @classmethod
     def copy_account(cls, login_user_name):
         account_found = Account.find_account(login_user_name)
-        pyperclip.copy(credentials_found_login_user_name)
+        pyperclip.copy(account_found.login_user_name)
