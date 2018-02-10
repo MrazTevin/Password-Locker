@@ -46,6 +46,9 @@ Given that the app is able to : 1. Store account details.
 * [Python](https://docs.python.org/3/) - The language used.
 
 
+## Installations
+   git clone the repo and install it on your local machine for usage.
+
 
 ## Author
 
