@@ -32,7 +32,7 @@ def main():
     name = input()
     print ("password...")
     name = input()
-s
+
 
 if __name__ == '__main__':
     main()
