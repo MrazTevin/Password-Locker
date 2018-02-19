@@ -70,6 +70,47 @@ def display_account(account):
     return UserAccount.copy_account(account)
 
 
+def main():
+    global login_name
+    global login_password
+
+    print("Welcome to password generator")
+    print("Kindly wait")
+    print("You name please?")
+    personal_name = input()
+
+    while True:
+        print("these shortcodes will help you navigate easily: '~new'-create a new account, '~sign'-log in to any of your accounts")
+        print("Input new or signIn")
+
+        if short_code == 'new':
+            print("Input username of your choice and automatically generate a password")
+            print()
+            name = input()
+            print()
+            passwords = generate_passwords()
+
+            save_user = (create_user(user_name, password))
+
+            print('\n')
+            print("You successfully created your new account")
+            print('\n')
+            break
+        
+        elif short_code == 'signin':
+            print(
+            login_name = input()
+
+            login = usercredential_exists(login_name, login_password)
+
+            if login = True:
+                print("You have successfully logged in.Enjoy!!")
+                print()
+                break
+
+        else:
+            print("Please use one of the two codes provide
+
 
 
 
