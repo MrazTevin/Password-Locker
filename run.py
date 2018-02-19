@@ -39,7 +39,7 @@ def save_accounts(accounts):
     '''function to save accounts'''
     return accounts.save_accounts()
 
-def find_useraccounts(login_user_name)
+def find_useraccounts(login_user_name):
     '''function to find user accounts'''
     return UserAccount.find_useraccount(login_user_name)
 
@@ -49,7 +49,7 @@ def useraccount_exists(login_user_name, login_password):
 
     return account_exists
 
-
+def create_accounts(username, password, website)
 
 
 
