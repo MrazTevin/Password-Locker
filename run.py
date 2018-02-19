@@ -29,7 +29,11 @@ def display_users():
     '''will return all saved users'''
     return User.display_users()
 
+def generate_passwords(user):
+    '''will generate passwords for various accounts'''
 
+    generate_accountPassword = user.generate_passwords()
+    return generate_accountPassword
 def save_accounts(accounts):
     return accounts.save_accounts()
 
