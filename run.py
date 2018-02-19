@@ -43,6 +43,14 @@ def find_useraccounts(login_user_name)
     '''function to find user accounts'''
     return UserAccount.find_useraccount(login_user_name)
 
+def useraccount_exists(login_user_name, login_password):
+    '''function that will check if the user account exists'''
+    account_exists = Useraccount.useraccount_exists(login_password,login_user_name)
+
+    return account_exists
+
+
+
 
 
 
