@@ -49,7 +49,12 @@ def useraccount_exists(login_user_name, login_password):
 
     return account_exists
 
-def create_accounts(username, password, website)
+def create_account(username, password, website):
+    '''
+    function to create a new account
+    '''
+    new_account = UserAccount(username, password, website)
+    return new_account
 
 
 
