@@ -63,6 +63,11 @@ def save_account(account):
     '''
     account.save_account()
 
+def display_account(account):
+    '''
+    checks if account can be displayed
+    '''
+    return UserAccount.copy_account(account)
 
 
 
