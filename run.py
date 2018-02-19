@@ -39,8 +39,9 @@ def save_accounts(accounts):
     '''function to save accounts'''
     return accounts.save_accounts()
 
-
-
+def find_useraccounts(login_user_name)
+    '''function to find user accounts'''
+    return UserAccount.find_useraccount(login_user_name)
 
 
 
