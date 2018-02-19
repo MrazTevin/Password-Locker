@@ -57,6 +57,13 @@ def create_account(username, password, website):
     return new_account
 
 
+def save_account(account):
+    '''
+    will save new account
+    '''
+    account.save_account()
+
+
 
 
 
