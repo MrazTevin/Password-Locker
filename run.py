@@ -20,12 +20,25 @@ def save_user(user):
 
 
 def find_user_by_user_name(user_name):
+    
+    '''Function that finds user_name by number'''
     return User.find_user_by_user_name(user_name)
 
 
-def display_aacount():
+def display_users():
+    '''will return all saved users'''
     return User.display_users()
 
 
 def save_accounts(accounts):
     return accounts.save_accounts()
+
+
+
+
+
+
+
+
+
+
