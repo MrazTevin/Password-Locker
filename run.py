@@ -34,7 +34,9 @@ def generate_passwords(user):
 
     generate_accountPassword = user.generate_passwords()
     return generate_accountPassword
+
 def save_accounts(accounts):
+    '''function to save accounts'''
     return accounts.save_accounts()
 
 
